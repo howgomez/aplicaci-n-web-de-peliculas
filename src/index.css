@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card__movies {
+  border-radius: 8px;
+  width: 300px;
+  margin: 6px;
+  height: 100%;
+  gap: 2px;
+}
+
+.card__movies:hover {
+  background-color: rgb(164, 88, 255);
+  mask-image: linear-gradient(to top, transparent, white);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+
+.card__movies img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to top, transparent, black);
+}
+.img-details{
+  border-radius: 8px;
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to top, transparent, black);
+}
+#scroll-menu {
+  position: absolute;
+  width: 25%;
+  height: 100dvh;
+  z-index: 1;
+  background: hsla(11, 82%, 87%, 1);
+  background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+
+
+}
+#scroll-menu nav{
+  display: flex;
+  flex-direction: column;
+  
+}
+.navbar {
+  position: relative;
+  background: hsla(11, 82%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+
+}
