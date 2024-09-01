@@ -19,10 +19,9 @@ const Navigation = ({ display }) => {
 
   const symbolName = user?.displayName.split('')
   return (
-    <div className='bg-black/40 z-20  rounded-xl px-4 py-2 w-[95%] flex items-center justify-between gap-1 text-sm m-auto mt-2 '>
+    <div className='bg-black/40 z-20  rounded-xl px-4 py-2 w-[95%] flex items-center justify-between gap-1 text-sm m-auto mt-2 text-white '>
       <nav className='flex font-bold text-[16px] gap-20'>
-        <Link to='/'>Inicio</Link>
-        <Link to='/search-movies'>Peliculas</Link>
+        <Link to='/dashboard'>Inicio</Link>
         <a href='/#popular'>Populares</a>
       </nav>
       <nav className='flex gap-6 items-center text-white'>

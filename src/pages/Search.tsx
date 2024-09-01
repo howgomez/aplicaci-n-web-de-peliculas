@@ -4,7 +4,6 @@ import useFetchMovies from '../hooks/useFetchMovies'
 import { useEffect, useState } from 'react'
 import CardMovies from '../components/search/CardMovies'
 import Navigation from '../components/Navigation'
-import NavBar from '../components/NavBar'
 const Search = () => {
   const { user } = useAuth()
 
@@ -15,7 +14,7 @@ const Search = () => {
 
   return (
     <div className='bg-gray-950'>
-      <NavBar />
+      <Navigation display='hidden' />
       <InputBtn value={value} setValue={setValue} />
       <div className='flex flex-col items-center justify-center p-8 mt-2 '>
         <div className='flex flex-wrap gap-4 w-[95%] m-auto'>

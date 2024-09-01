@@ -23,7 +23,6 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true }
       ]
-    },
-    eslintConfig: './node_modules/standard/eslintrc.json'
+    }
   }
 )

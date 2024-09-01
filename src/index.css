@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  overflow-x: hidden;
+}
 .card__movies {
   border-radius: 8px;
   width: 300px;

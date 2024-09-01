@@ -1,17 +1,20 @@
-import { useAuth } from '../context/AuthContext'
-import { useNavigate, Link } from 'react-router-dom'
-import UserMenu from '../components/UserMenu'
-import { CiSearch } from 'react-icons/ci'
 import ListMovies from '../components/dashboard/ListMovies'
 import Navigation from '../components/Navigation'
-import wallpapaer from '../assets/wallpaper.jpg'
+import { useMediaQuery } from '@uidotdev/usehooks'
+
 const Dashboard = () => {
+  const isMobile = useMediaQuery('(min-width: 1220px)')
+
+  const backdrop_path = 'https://image.tmdb.org/t/p/original//fypydCipcWDKDTTCoPucBsdGYXW.jpg.jpg'
+  const poster_path = 'https://image.tmdb.org/t/p/original//gKkl37BQuKTanygYQG1pyYgLVgf.jpg.jpg'
+  const imageUrl = isMobile ? backdrop_path : poster_path
+
   return (
     <main className='bg-gray-950'>
       <div>
         <aside className='w-screen h-screen bg-black'>
           <img
-            src={wallpapaer}
+            src={imageUrl}
             alt='Walpapper'
             className='w-full z-20 h-full opacity-75'
           />
