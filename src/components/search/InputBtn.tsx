@@ -1,7 +1,7 @@
-import { CiSearch } from 'react-icons/ci'
 
-interface Props {
+export interface Props {
   value: string | number
+  setValue: React.Dispatch<React.SetStateAction<string | number>>
 }
 
 
@@ -11,7 +11,8 @@ const InputBtn = ( { value, setValue } : Props) => {
   
   return (
     <div className='w-[95%] m-auto mt-6'>
-      <input type='text' 
+      <input 
+      type='text' 
       placeholder='Buscar peliculas...' 
       className='w-full border-none outline-none p-3  bg-gray-800 rounded-lg text-white text-md'
       value={value}

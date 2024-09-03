@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  overflow-x: hidden;
-}
 .card__movies {
   border-radius: 8px;
   width: 300px;
@@ -54,4 +51,16 @@
 
 background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
 
+}
+
+.image-shadow {
+  
+    background-color: black;
+    background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 1%,
+      rgba(0, 0, 0, 0) 59%,
+      rgba(0, 0, 0, 1) 100%
+    );
 }

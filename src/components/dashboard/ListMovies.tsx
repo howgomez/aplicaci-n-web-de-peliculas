@@ -14,11 +14,11 @@ const ListMovies = () => {
       setMovies(data.results)
     }
     getMovies()
-    console.log(movies)
-  }, [])
+  }, [url])
 
+  
   return (
-    <div className='relative w-full h-full'>
+    <div>
       <h1 id='populares' className='text-bold text-white text-left text-3xl p-6'>Populares</h1>
       <Card movie={movies} />
     </div>

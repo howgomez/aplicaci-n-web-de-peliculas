@@ -4,8 +4,11 @@ import ProtectedRoute from './ProtectedRoute'
 import AuthForm from '../components/AuthForm'
 import Search from '../pages/Search'
 import MovieDetails from '../pages/MovieDetails'
+import NotFound from '../pages/NotFound'
 
 const AppRouter = () => {
+
+
   return (
     <Routes>
       <Route path='/' element={<AuthForm />} />
@@ -34,6 +37,7 @@ const AppRouter = () => {
           </ProtectedRoute>
         }
       />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }
