@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# APLICACIÓN WEB CON TYPESCRIPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web al estilo HBO con Login y Registro con Firebase
 
-Currently, two official plugins are available:
+## Información
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Creado por [Gustavo Gomez](https://github.com/howgomez)
+- Repositorio de la aplicación [aquí](https://github.com/howgomez/aplicaci-n-web-de-peliculas)
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind
+- Firebase
 
-- Configure the top-level `parserOptions` property like this:
+## Como ejecutar
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Requisitos
+
+- [Node.js](https://nodejs.org/es/)
+- [Pnpm](https://pnpm.io/es/)
+
+### Instalación
+
+```bash
+pnpm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Inicio
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+pnpm dev
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Compilación
+
+```bash
+pnpm build
 ```
